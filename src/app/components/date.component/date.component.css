@@ -1,0 +1,9 @@
+.date-container {
+  text-align: center;
+}
+label {
+  margin-right: 10px;
+}
+input {
+  cursor: pointer;
+}

@@ -12,10 +12,10 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": {
-            "regexp": "(.*?)"
+            "regexp": "Starting compilation"
           },
           "endsPattern": {
-            "regexp": "bundle generation complete"
+            "regexp": "Compiled successfully"
           }
         }
       }
@@ -23,7 +23,7 @@
     {
       "type": "npm",
       "script": "test",
-      "isBackground": true,
+      "isBackground": false,
       "problemMatcher": {
         "owner": "typescript",
         "pattern": "$tsc",

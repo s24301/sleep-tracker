@@ -1,0 +1,26 @@
+ /* Slider */
+ .slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 1;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input[type="range"] {
+    flex: 1;
+    height: 8px;
+    accent-color: #a3bffa;
+    background: transparent;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    border: 2px solid #a3bffa;
+    cursor: pointer;
+  }
+  #hours-value {
+    margin-left: 8px;
+  }

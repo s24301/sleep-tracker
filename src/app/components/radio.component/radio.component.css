@@ -1,0 +1,24 @@
+  /* Radio */
+  .radio-container {
+    /* border: 1px solid red; */
+  }
+  input[type="radio"] {
+    accent-color: #a3bffa;
+    background-color: #404350;
+    cursor: pointer;
+  }
+  fieldset {
+    border: 1px solid #a3bffa;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #555868;
+    color: #dddddd;
+  }
+  legend {
+    padding: 5px;
+    color: #dddddd;
+    background-color: #555868;
+    border-radius: 10px;
+    border: #a3bffa solid 1px;
+    border-bottom: 0px;
+  }
