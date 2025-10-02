@@ -1,7 +1,16 @@
 <!-- slider with hours of sleep -->
  <div class="slider-container">
-    <label for="sleep-hours">Hours Slept:</label>
-    <input type="range" id="sleep-hours" name="sleep-hours" min="0" max="24" step="0.5" [(ngModel)]="sleepHours" />
-    <span id="hours-value">{{ sleepHours }} hours</span>
- </div>
+  <label for="sleep-hours">Hours Slept:</label>
+  <input
+    type="range"
+    id="sleep-hours"
+    name="sleep-hours"
+    min="0"
+    max="24"
+    step="0.5"
+    [(ngModel)]="sleepHours"
+    (input)="onSliderChange()"
+  />
+  <span id="hours-value">{{ sleepHours }} hours</span>
+</div>
     <br /><br />

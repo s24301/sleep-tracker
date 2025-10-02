@@ -1,57 +1,6 @@
-<router-outlet>
 <main class="main">
 
   <app-nav></app-nav>
-
-  <!-- top section -->
-  <section class="top-section">
-    <h1>☁️ Welcome to Sleep Tracker ☁️</h1>
-    <p>Track your sleep patterns and improve your rest!</p>
-  </section>
-
-  <!-- sleep input -->
-    <div class="box">
-      <section class="sleep-input">
-        <h2>Log Your Sleep</h2>
-          
-        <app-date></app-date>
-          <br />
-          
-        <app-slider></app-slider>
-          <br />
-
-        <app-radio></app-radio>
-          <br />
-
-        <app-notes></app-notes>
-          <br />
-
-        <!-- submit button -->
-        <button type="submit">Submit Sleep Info</button>
-      </section>
-    </div>
-
-  <!-- status for today -->
-    <div class="box">
-      <section class="status-today">
-        <h2>Today's Sleep Status</h2>
-        <p>You slept for 7 hours last night. Great job!</p>
-      </section>
-    </div>
-
-  <!-- sleep hygiene tips -->
-   <div class="box">
-    <section class="sleep-hygiene-tips">
-      <h2>Sleep Hygiene Tips</h2>
-      <ul>
-        <li>Maintain a consistent sleep schedule.</li>
-        <li>Avoid caffeine and heavy meals before bedtime.</li>
-        <li>Create a relaxing bedtime routine.</li>
-        <li>Keep your sleep environment cool and dark.</li>
-      </ul>
-    </section>
-  </div>
+  <router-outlet></router-outlet>
 
 </main>
-
-</router-outlet>

@@ -1,0 +1,44 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.profile-page h1 {
+  text-align: center;
+}
+
+.profile-section {
+  background-color: #707386;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-bottom: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.profile-buttons button {
+  flex: 1;
+  background-color: #404350; 
+  color: #a3bffa; 
+  border: 1px solid #a3bffa; 
+  border-radius: 6px; 
+  padding: 10px 24px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  transition: background 0.2s, color 0.2s; 
+  width: 100%; 
+}
+.profile-buttons button:hover { 
+  background-color: #a3bffa; 
+  color: #404350; 
+}

@@ -1,0 +1,21 @@
+.log-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.log-page h1 {
+  text-align: center;
+}
+
+.sleep-log-entry {
+  background-color: #707386;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.sleep-log-entry h2 {
+  margin-top: 0;
+}

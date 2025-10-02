@@ -5,5 +5,10 @@ label {
   margin-right: 10px;
 }
 input {
+  color: #555868;
+  background-color: #dddddd;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
   cursor: pointer;
 }
