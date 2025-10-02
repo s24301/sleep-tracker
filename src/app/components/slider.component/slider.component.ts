@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -10,5 +10,13 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
-  sleepHours = 8;
+  sleepHours: number = 8;
+
+  @Output() sleepHoursChange = new EventEmitter<number>();
+
+  onSliderChange() {
+    this.sleepHoursChange.emit(this.sleepHours);
+    // console.log('📤 Emituję wartość:', this.sleepHours);
+  }
+
 }

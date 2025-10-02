@@ -1,6 +1,16 @@
 # SleepTracker
 
+[PL] Sleep Tracker to aplikacja frontendowa, która pomaga monitorować i analizować nawyki snu. Użytkownik może wprowadzać dane o czasie snu, wieczornych nawykach i zapisywać własne przemyślenia lub notować sny. Oprócz tego może również przeglądać historię zapisów w Sleep Log oraz swoje statystyki na stronie Profile.
+
+Ten projekt został wygenerowany przy użyciu [Angular CLI](https://github.com/angular/angular-cli) w wersji 20.3.3.
+
+[EN] Sleep Tracker is a front-end app that helps to monitor and analyze sleep habits. Users can enter data about sleep duration and evening habits, and write down their own thoughts or dreams. They can also view their sleep history in Sleep Log and statistics in Profile.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+
+## Technologies
+
+Angular 20.3.3, TypeScript, HTML5, CSS3, Standalone Components & Routing.
 
 ## Development server
 

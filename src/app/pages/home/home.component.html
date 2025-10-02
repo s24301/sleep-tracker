@@ -1,0 +1,64 @@
+<!-- top section -->
+  <section class="top-section">
+    <h1>☁️ Welcome to Sleep Tracker ☁️</h1>
+    <p>Track your sleep patterns and improve your rest!</p>
+  </section>
+
+  <!-- sleep input -->
+    <div class="box">
+      <section class="sleep-input">
+        <h2>Log Your Sleep</h2>
+          
+        <app-date></app-date>
+          <br />
+          
+        <app-slider (sleepHoursChange)="sleepHours = $event"></app-slider>
+          <br />
+
+        <app-radio></app-radio>
+          <br />
+
+        <app-notes></app-notes>
+          <br />
+
+        <!-- submit button -->
+        <button type="submit" (click)="submitSleepData()">Submit Sleep Info</button>
+        <p *ngIf="submitted" style="color: #dddddd; text-align: center;">
+         ✅ Saved!
+        </p>
+      </section>
+    </div>
+
+<!-- status for today -->
+<div class="box">
+    <section class="status-today">
+    <h2>Today's Sleep Status</h2>
+    <p *ngIf="submitted; else noData">
+      You slept for {{ sleepHours }} hours last night.
+      {{
+        sleepHours < 7
+          ? 'Try to sleep a bit more tomorrow!'
+          : sleepHours > 10
+            ? 'You might be sleeping too much!'
+            : 'Great job!'
+      }}
+    </p>
+
+    <ng-template #noData>
+      <p>No sleep data submitted yet.</p>
+    </ng-template>
+    </section>
+</div>
+
+<!-- sleep hygiene tips -->
+<div class="box">
+<section class="sleep-hygiene-tips">
+    <h2>Sleep Hygiene Tips</h2>
+    <ul>
+    <li>Maintain a consistent sleep schedule.</li>
+    <li>Avoid caffeine and heavy meals before bedtime.</li>
+    <li>Create a relaxing bedtime routine.</li>
+    <li>Keep your sleep environment cool and dark.</li>
+    </ul>
+</section>
+</div>
